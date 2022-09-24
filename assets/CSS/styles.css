@@ -193,11 +193,12 @@ li {
   h1 {
     padding: 0px;
     width: 100%;
-}
+  }
 
-aside {
+  aside {
     border-right: none;
     border-bottom: solid 2px;
     border-color: var(--dark-blue);
     margin: 20px;
+  }
 }
