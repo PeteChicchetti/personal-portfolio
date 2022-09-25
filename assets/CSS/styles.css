@@ -23,7 +23,6 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
 }
 
 /*-- Paragraph universal sizing --*/
@@ -130,7 +129,7 @@ h3::after {
     
 
 div {
-    width: 70%;
+    width: 80%;
 }
 
 /*-- About Info --*/
@@ -149,13 +148,63 @@ div {
 
 .images {
     display: flex;
-    justify-content: space-between;
 }
 
-#box1 {
-    background-image: url("");
+
+.images > li {
+    width: 45%;
+    height: 80px;
+    margin: 5px;
 }
 
+.box1 {
+    background-image: url("/assets/images/workspace.jpg");
+    display: flex;
+    width: 100%;
+    height: 160px;
+    border: 4px solid var(--light-blue);
+}
+
+.box2-3 {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    
+}
+
+.box3-4 {
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+
+#box2 {
+    background-image: url("/assets/images/workspace.jpg");
+    flex-basis: 100%;
+    border: 4px solid var(--light-blue);
+    margin: 4px 2px 2px 0;
+}
+
+#box3 {
+    background-image: url("/assets/images/workspace.jpg");
+    flex-basis: 100%;
+    border: 4px solid var(--light-blue);
+    margin: 4px 0 2px 2px;
+}
+
+#box4 {
+    background-image: url("/assets/images/workspace.jpg");
+    flex-basis: 50%;
+    border: 4px solid var(--light-blue);
+    margin: 4px 2px 2px 0;
+}
+
+#box5 {
+    background-image: url("/assets/images/workspace.jpg");
+    flex-basis: 50%;
+    border: 4px solid var(--light-blue);
+    margin: 4px 0 2px 2px;
+}
 
 /*-- Contact Info --*/
 .contact {
@@ -184,7 +233,7 @@ li {
 
 
 /*-- Media screen sizing --*/
-@media  screen and (max-width: 910px){
+@media  screen and (max-width: 960px){
     header, nav, .about, 
  .work-info,  .contact {
     flex-direction: column;
