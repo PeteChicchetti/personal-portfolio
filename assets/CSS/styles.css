@@ -25,26 +25,14 @@ main {
     flex-wrap: wrap;
 }
 
-/*-- Paragraph universal sizing --*/
-p {
-    display: inline-flex;
-    color: var(--dark-blue);
-    font-size: 12px;
-    font-weight: 600;
-    padding: 20px;
-    width: 80%;
-    text-align: center;
-}
-
-
-/*-- Header, Navbar --*/
+/*-- Header, Navbar, Nav links --*/
 header {
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     padding: 10px 0px 10px 0px;
-    background-color:var(--gray);    
+    background-color:var(--gray);
 }
 
 h1 {
@@ -58,27 +46,6 @@ h1 {
     font-family: sans-serif;
 }
 
-h2 {
-    position: absolute;
-    right: 2%;
-    bottom: 7px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 4px;
-    background-color: var(--light-blue);
-    font-size: 175%;
-    font-family: sans-serif;
-    color: var(--gray);
-}
-
-h3 {
-    color: var(--dark-blue);
-    font-size: 275%;
-    padding-right: 10px;
-    text-align: right;
-}
 
 nav {
     padding-right: 50px;
@@ -97,7 +64,8 @@ a {
     text-decoration-thickness: 3px;
 }
 
-/*-- Banner img and Subtitle --*/
+/*-- Banner img and Subtitle Styling --*/
+/*-- .banner for figure properties --*/
 .banner {
     display: block;
     position: relative;
@@ -112,7 +80,22 @@ img {
     height: 175px;
 }
 
-/*-- Content Boxes--*/
+h2 {
+    position: absolute;
+    right: 2%;
+    bottom: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    background-color: var(--light-blue);
+    font-size: 175%;
+    font-family: sans-serif;
+    color: var(--gray);
+}
+
+/*-- Content Sections = Sidebar, Headings and Content Box Sizing  --*/
 aside {
     border-right: solid 2px;
     border-color: var(--dark-blue);
@@ -120,21 +103,22 @@ aside {
     width: 20%;
 }
 
-h3::after {
-    content:""; 
-    position: absolute;
-    margin: 10px; 
-    bottom: 0; 
-    left: 0; 
-    height: 60%; 
-    width: 1.5px;
+h3 {
+    color: var(--dark-blue);
+    font-size: 275%;
+    padding-right: 10px;
+    text-align: right;
 }
     
 div {
     width: 80%;
 }
 
-/*-- About Info --*/
+/*-- About Section, Photo, and Paragraph --*/
+/*-- .about is the content box for about --*/
+/*-- .photo-box is the content box for personal photo --*/
+/*-- .photo if for the image --*/
+
 .about {
     display: flex;
     justify-content: space-around;
@@ -152,7 +136,24 @@ div {
     width: 200px;
 }
 
-/*-- Portfolio Info --*/
+p {
+    display: inline-flex;
+    color: var(--dark-blue);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+/*-- Work Projects --*/
+/*-- .work-info is content box for work section --*/
+/*-- .images is the content box housing the 5 work items --*/
+/*-- .top-box is box size for box 1 --*/
+/*-- .box2-3 and .box3-4 are the box properties for those items  --*/
+/*-- #box1-5 are defining box placement and styling --*/
+/*-- .box1-sub and .subtitle are properties for positioning and styling of the title for each box --*/
+/*-- .card-img1 and .card-imgs are the sizing properties for each image in the work section --*/
 .work-info {
     display: flex;
     justify-content: space-around;
@@ -166,13 +167,6 @@ div {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 73px;
-}
-
-
-.images > a {
-    width: 45%;
-    height: 80px;
-    margin: 5px;
 }
 
 .top-box {
@@ -269,6 +263,8 @@ div {
 }
 
 /*-- Contact Info --*/
+/*-- .contact is for the content box for this section --*/
+/*-- ul and li are defining the styling for the contact info  --*/
 .contact {
     display: flex;
     justify-content: space-around;
