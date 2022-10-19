@@ -13,7 +13,6 @@ N/A
 
 https://petechicchetti.github.io/peters-personal-portfolio/
 
-![alt text](assets/images/page-img1.png)
-![alt text](assets/images/page-img2.png)
+![alt text](assets/images/Portfolio.png.png)
 
 
